@@ -1,0 +1,36 @@
+.ap-container
+{display: flex;
+margin-bottom: 30px;}
+
+.host
+{display: flex;
+margin-left: 90px;}
+
+
+.logo-host
+{background-color: #C4C4C4;
+border-radius:50px;
+width: 64px;
+height: 64px;
+}
+
+.rate 
+{margin-top: 10px;
+margin-left: 90px;
+}
+
+.ap-tag span
+{
+    background-color: #FF6060;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.Ap-deroulante {
+    display: flex;
+    gap:40px;
+    margin-bottom: 30px;
+      }
+    

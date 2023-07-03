@@ -1,2 +1,32 @@
-h1git
-{ color:#FF6060,}
+.Ap-titre h1, h2, h3
+{color: #FF6060}
+
+h1
+{margin-block: 0px;
+font-size: 36px;
+font-weight: 500;
+}
+
+h2
+{
+font-size: 18px;
+font-weight: 500;
+margin-top: 5px;
+}
+
+h3{
+margin-block: 0px;
+font-size: 18px;
+font-weight: 500;
+display: grid;
+place-items: center;
+}
+
+
+
+
+
+
+ 
+
+
