@@ -1,0 +1,20 @@
+.banner
+{ max-width: 100%;
+min-height: 200px;
+border-radius: 20px;
+background-image: url(https://unsplash.it/800/200);
+display: grid;
+place-items: center;
+color: white;
+position: relative;
+margin-bottom: 90px;
+}
+
+.banner::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    opacity: 0.5;
+    border-radius: 20px;
+  }
+

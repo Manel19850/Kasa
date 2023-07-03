@@ -1,0 +1,16 @@
+.navbar 
+{ display: flex;
+align-items: center;
+gap:30px;
+color:#fF6060;
+font-weight: 700;}
+
+.navbar a{
+text-decoration: none;
+color:#fF6060;}
+
+.navbar a:hover
+{text-decoration: underline;}
+
+.logo-navbar
+{margin-right: auto;}

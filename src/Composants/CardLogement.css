@@ -1,0 +1,17 @@
+.cardlogement
+{background-color:#F6F6F6;
+min-height: 829px;
+border-radius: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+padding: 20px;
+margin: 30px;
+justify-content: space-between;
+}
+
+@media screen  and (width <= 768px) {
+    .cardlogement{
+    justify-content: center;
+    background-color:white;}
+}
