@@ -1,23 +1,4 @@
-.ap-container
-{display: flex;
-margin-bottom: 30px;}
 
-.host
-{display: flex;
-margin-left: 90px;}
-
-
-.logo-host
-{background-color: #C4C4C4;
-border-radius:50px;
-width: 64px;
-height: 64px;
-}
-
-.rate 
-{margin-top: 10px;
-margin-left: 90px;
-}
 
 .ap-tag span
 {
