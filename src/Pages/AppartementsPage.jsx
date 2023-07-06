@@ -10,7 +10,7 @@ function AppartementsPage (){
 return(
 <div className='AppartementsPages'>
         <AppartementBanner/>  
-        <AppartementContainer/>        
+        <AppartementContainer/>    
 </div>
 
        
