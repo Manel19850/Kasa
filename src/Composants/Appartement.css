@@ -17,5 +17,6 @@ margin-bottom: 20px;
 }
 
 @media screen  and (width <= 768px) {
-    .appartement{flex-basis: 100%;}
+    .appartement{flex-basis: 100%;
+    margin: 0px;}
 }

@@ -14,4 +14,7 @@ img
 
 
 
-
+@media screen  and (width <= 768px) {
+    .footer
+    { margin-top: 20px;}
+}

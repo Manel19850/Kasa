@@ -13,5 +13,6 @@ justify-content: space-between;
 @media screen  and (width <= 768px) {
     .cardlogement{
     justify-content: center;
-    background-color:white;}
+    background-color:white;
+margin: 0px;}
 }

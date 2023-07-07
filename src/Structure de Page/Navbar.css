@@ -14,3 +14,16 @@ color:#fF6060;}
 
 .logo-navbar
 {margin-right: auto;}
+
+@media screen  and (width <= 768px) {
+    .navbar{
+        display: flex;
+        width: 335px;
+        align-items: center;
+    margin-bottom: 20px;}
+
+        .logo-navbar img
+        {width: 100px;
+        padding-top: 0px;}
+
+}
