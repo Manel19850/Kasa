@@ -1,0 +1,32 @@
+.appartement {
+    border-radius: 20px;
+    align-items: end;
+    min-width: 200px;
+    min-height: 200px;
+
+    img{
+     
+      width: 340px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 20px;
+      padding: 0px;
+      position: relative;
+      filter: brightness(0.8);
+    }
+  
+    &-title {
+      color: white;
+      width: 20%;
+      font-size: 15px;
+      position: absolute;
+     margin-top: -50px;
+     margin-left: 20px;}
+  }
+
+  
+  
+@media screen  and (width <= 768px) {
+    .appartement{flex-basis: 100%;
+    margin: 0px;}
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import "./AppartementsPage.css";
-import AppartementBanner from '../Composants/AppartementBanner';
-import AppartementContainer from '../Composants/AppartementContainer';
+import AppartementCarousel from '../Composants/AppartementCarousel';
+import AppartementContainer from '../Composants/AppartementCollapse';
+import AppartementsInfos from '../Composants/AppartementsInfos';
 
 ;
 
@@ -9,7 +10,8 @@ function AppartementsPage (){
 
 return(
 <div className='AppartementsPages'>
-        <AppartementBanner/>  
+         <AppartementCarousel/>
+        <AppartementsInfos/> 
         <AppartementContainer/>    
 </div>
 

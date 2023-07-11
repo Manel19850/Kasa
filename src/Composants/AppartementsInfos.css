@@ -1,0 +1,73 @@
+.ap-container
+{display: flex;
+justify-content: space-between;}
+
+.ap-tag span
+{
+    background-color: #FF6060;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.ap-tag
+{ margin-bottom: 30px;}
+
+
+
+.ap-tag span
+{
+    background-color: #FF6060;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.ap-tag
+{ margin-bottom: 30px;}
+
+@media screen  and (width <= 768px) {
+
+   
+    .Ap-titre h1
+    {font-size: 18px;}
+ 
+    .ap-container
+    {display: flex;
+     flex-wrap: wrap;
+     justify-content: center;}
+ 
+     .Ap-host
+     { display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;}
+ 
+     .rate
+     {margin-top: 30px;
+     margin-right: 130px;
+     font-size: 15px;}
+ 
+     .ap-tag 
+     { display: flex;
+     justify-content: center;}
+ 
+     .ap-tag span
+     { text-align: center;
+     width: 40px;
+     font-size: 10px;
+     padding-left: 25px;
+     padding-right: 25px;}
+ 
+     .host h3
+     {font-size: 12px;}
+ 
+     .logo-host
+     {width: 32px;
+     height: 32px;
+     margin-left: 10px;
+     margin-top: 10px;}
+ 
+    
+     } 
