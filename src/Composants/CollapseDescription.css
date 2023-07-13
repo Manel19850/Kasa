@@ -1,0 +1,67 @@
+
+.host
+{display: flex;}
+
+.description
+{
+    padding-left: 15px;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 910px;
+    height: 52px;
+   
+}
+
+.description-content
+{   padding: 10px 20px 10px 10px;
+    align-items: center;
+    background-color:#E3E3E3;
+    color:#FF6060;
+    border-radius: 10px;
+    margin-right: 20px;
+
+}
+
+.fa-chevron-down
+{font-size: 35px;
+color:white;
+margin-left: 85%;}
+
+
+
+@media screen  and (width <= 768px) {
+
+    .Ap-deroulante
+    {display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap:40px;
+    justify-content: center;}
+
+    .description-content
+    {
+        padding: 10px 10px 10px 10px;
+        margin-right: -10px;
+    }
+
+    .Ap-collapse
+    {display: flex;
+    flex-direction: column;}
+
+    .description 
+    { height: 30px;
+    width: 320px;
+    padding-top:10px;}
+
+    .fa-chevron-down
+    {margin-top: 0px;
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;}
+
+
+
+}

@@ -2,36 +2,35 @@ import React from 'react';
 import "./AppartementsInfos.css";
 
 
-function Appartementsinfos (){
+function Appartementsinfos (props){
+  const name = props.flat.host.name;
+  const [firstName, lastName] = name.split (" ");
+
     return (
 
         <div className='ap-container'>
 <div className='Ap-titre'>
-      <h1>Cozy loft on the Canal Saint Martin</h1>
-      <h2>Paris, îles de France</h2>
+      <h1>{props.flat.title}</h1>
+      <h2>{props.flat.location}</h2>
       <div className='ap-tag'>
-        <span>Cozy</span>
-        <span>Canal</span>
-        <span>Paris 10</span>
+      {props.flat.tags.map((tag) => (
+    <span key={tag}>{tag}</span>
+      ))}
       </div>
     </div> 
     <div className='Ap-host'>
     <div className='host'>
       <h3>
-        <span>Alexandre</span> 
-        <span>Dumas</span>
+        <span>{firstName}</span> 
+        <span>{lastName}</span>
       </h3>
-      <div className='logo-host'></div>
+        <div className='logo-host'>
+            <img src={props.flat.host.picture} alt=""/> 
+        </div>
     </div>
 
     <div className='rate'>
-      <div>
-        <i className="fa-sharp fa-regular fa-star"></i>
-        <i className="fa-sharp fa-regular fa-star"></i>
-        <i className="fa-sharp fa-regular fa-star"></i>
-        <i className="fa-sharp fa-regular fa-star"></i>
-        <i className="fa-sharp fa-regular fa-star"></i>
-      </div>  
+        {[1,2,3,4,5].map ((num) =><span key={num} className={props.flat.rating > num ?"on":""}>★</span>)}
     </div>               
   </div>
   </div>

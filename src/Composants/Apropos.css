@@ -14,3 +14,12 @@ width: 1023px;
 padding: 10px 20px 10px 15px;
 align-items: center;
 border-radius: 10px;}
+
+
+@media screen  and (width <= 768px) {
+
+.fiabilite, .respect, .securite, .service {
+  width:300px;
+  height: 20px;
+
+}}

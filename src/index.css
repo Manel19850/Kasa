@@ -4,11 +4,10 @@
     src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">');
   }
 
- * {box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    
-    font-family: 'Montserrat', sans-serif;
-   }
+ * {font-family: 'Montserrat', sans-serif;}
+
+    .body
+    {margin:0px;
+    padding:0px}
 
 

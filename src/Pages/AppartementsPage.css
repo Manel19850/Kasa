@@ -22,7 +22,9 @@ display: grid;
 place-items: center;
 }
 
-
+.Ap-collapse
+{display: flex;
+margin-bottom: 40px;}
 
  
 

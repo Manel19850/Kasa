@@ -1,15 +1,16 @@
 import React from 'react';
 import "./Appartement.scss";
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Appartement(props) {
   return (
-    <div className='appartement'>
-      <Link to ="Appartements">
-        <img src={props.image} alt=''></img>
-        <div className='appartement-title'>{props.title}</div>
-      </Link>
+    <Link to= "/Appartements" 
+    state={{appartementId:props.id}}>
+    <div className='appartement'> 
+    <div className='appartement-title'>{props.title}</div>
     </div>
+      </Link>
+   
     
   );
 }

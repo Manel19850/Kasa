@@ -4,15 +4,16 @@ min-height: 829px;
 border-radius: 20px;
 display: flex;
 flex-wrap: wrap;
-gap: 15px;
-padding: 20px;
-margin: 30px;
-justify-content: space-between;
+padding: 50px;
+margin: 70px;
 }
+
 
 @media screen  and (width <= 768px) {
     .cardlogement{
     justify-content: center;
     background-color:white;
-margin: 0px;}
+    margin: 0px;
+    padding: 0px;
+  }
 }

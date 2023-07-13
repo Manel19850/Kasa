@@ -15,9 +15,10 @@ function CardLogement() {
 
   return (
     <div className='cardlogement'>
-    {appartements.map((appartement) => (
-       <div>
-         <Appartement title= {appartement.title} image={appartement.cover}/>
+    {appartements.map((appartement,index) => (
+       <div
+        key={index}>
+         <Appartement title= {appartement.title} id={appartement.id}/>
       
       </div>
     ))}
