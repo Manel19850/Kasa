@@ -29,7 +29,7 @@ function Apropos() {
   return (
     <div className="page-apropos">
       <div className="banner-apropos">
-        <img src="https://picsum.photos/800/400" alt="Photo" />
+        <img src="banner.png" alt="Photo" />
       </div>
 
       <div className="container-apropos">

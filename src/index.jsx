@@ -23,6 +23,7 @@ export const Router = createBrowserRouter([
 errorElement: (<>
                   <Navbar/>
                   <Error/>
+                  <Footer/>
               </>),
 
   children: [

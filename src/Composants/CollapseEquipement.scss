@@ -40,12 +40,14 @@ $color-backgroundDark:#E3E3E3;
   .fa-chevron-down
 {   font-size: 35px;
     color:$color-tertiary;
+    cursor: pointer;
 }
 
 .fa-chevron-up
 {   font-size: 35px;
     color:$color-tertiary;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 
