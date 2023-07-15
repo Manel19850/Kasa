@@ -1,32 +1,104 @@
-import React from 'react';
-import "./Apropos";
-import "./Apropos.css";
+import React, { useState } from 'react';
+import './Apropos.scss';
 
-function Apropos (){
-return (
+function Apropos() {
+  const [isFiabiliteVisible, setFiabiliteVisible] = useState(false);
+  const [isRespectVisible, setRespectVisible] = useState(false);
+  const [isServiceVisible, setServiceVisible] = useState(false);
+  const [isSecuriteVisible, setSecuriteVisible] = useState(false);
 
-<div className='page-apropos'>
-
-<div className='banner-apropos'>
-    <img src='https://picsum.photos/800/400' alt='Photo'></img> 
-</div>
-
-<div className='container-apropos'>
-   
-      <div className='fiabilite'>Fiabilité<i className="fa-solid fa-chevron-down"></i> </div> 
-    
-      <div className='respect'>Respect<i className="fa-solid fa-chevron-down"></i> </div> 
-   
-      <div className='service'>Service<i className="fa-solid fa-chevron-down"></i> </div> 
-  
-      <div className='securite'>Sécurité<i className="fa-solid fa-chevron-down"></i> </div> 
-</div>
-
-
-</div>
-
-
-    );
+  const showContent = (collapse) => {
+    switch (collapse) {
+      case 'fiabilite':
+        setFiabiliteVisible(!isFiabiliteVisible);
+        break;
+      case 'respect':
+        setRespectVisible(!isRespectVisible);
+        break;
+      case 'service':
+        setServiceVisible(!isServiceVisible);
+        break;
+      case 'securite':
+        setSecuriteVisible(!isSecuriteVisible);
+        break;
+      default:
+        break;
     }
+  };
 
-    export default Apropos;
+  return (
+    <div className="page-apropos">
+      <div className="banner-apropos">
+        <img src="https://picsum.photos/800/400" alt="Photo" />
+      </div>
+
+      <div className="container-apropos">
+        <div className="fiabilite" onClick={() => showContent('fiabilite')}>
+          <span>Fiabilité</span>
+          <span>
+            {isFiabiliteVisible ? (
+              <span><i className="fa-solid fa-chevron-up"></i></span>
+            ) : (
+              <span><i className="fa-solid fa-chevron-down"></i></span>
+            )}
+          </span>
+        </div>
+        {isFiabiliteVisible && (
+          <div className="content">
+            Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
+          </div>
+        )}
+
+        <div className="respect" onClick={() => showContent('respect')}>
+          Respect
+          <span>
+            {isRespectVisible ? (
+              <span><i className="fa-solid fa-chevron-up"></i></span>
+              ) : (
+                <span><i className="fa-solid fa-chevron-down"></i></span>
+            )}
+          </span>
+        </div>
+        {isRespectVisible && (
+          <div className="content">
+            La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.
+          </div>
+        )}
+
+        <div className="service" onClick={() => showContent('service')}>
+          Service
+          <span>
+            {isServiceVisible ? (
+              <span><i className="fa-solid fa-chevron-up"></i></span>
+              ) : (
+                <span><i className="fa-solid fa-chevron-down"></i></span>
+            )}
+          </span>
+        </div>
+        {isServiceVisible && (
+          <div className="content">
+            La satisfaction de nos utilisateurs est notre priorité. Notre équipe dévouée est disponible 24/7 pour vous aider à résoudre tout problème ou répondre à toutes vos questions.
+          </div>
+        )}
+
+        <div className="securite" onClick={() => showContent('securite')}>
+          Sécurité
+          <span>
+            {isSecuriteVisible ? (
+             <span><i className="fa-solid fa-chevron-up"></i></span>
+             ) : (
+               <span><i className="fa-solid fa-chevron-down"></i></span>
+            )}
+          </span>
+        </div>
+        {isSecuriteVisible && (
+          <div className="content">
+            La sécurité est une priorité absolue pour nous. Nous prenons des mesures strictes pour garantir la sécurité de vos informations personnelles et assurer la protection de vos transactions.
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Apropos;

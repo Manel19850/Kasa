@@ -1,0 +1,54 @@
+$banner-height: 300px;
+$banner-border-radius: 20px;
+$chevron-top: 27%;
+
+.bannerAppartement img {
+  position: relative;
+  width: 100%;
+  height: $banner-height;
+  border-radius: $banner-border-radius;
+  padding: 0;
+  object-fit: cover;
+}
+
+.chevron {
+  position: absolute;
+  top: $chevron-top;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 70px;
+  color:white;
+}
+
+.fa-chevron-right {
+  margin-right:90px;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+
+@media screen  and (width <= 768px) {
+
+.bannerAppartement img{
+width:100%;
+height:255px;}
+
+.fa-chevron-right {
+  margin-right:20px;
+  font-size: 35px;
+}
+
+.fa-chevron-left {
+  font-size: 35px;
+}
+
+}

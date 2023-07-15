@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "./AppartementsPage.css";
+import "./AppartementsPage.scss";
 import AppartementCarousel from '../Composants/AppartementCarousel';
 import Description from '../Composants/CollapseDescription';
 import Equipement from '../Composants/CollapseEquipement';

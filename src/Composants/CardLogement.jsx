@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from 'react'
-import "./CardLogement.css";
+import "./CardLogement.scss";
 import Appartement from "./Appartement"
 
 

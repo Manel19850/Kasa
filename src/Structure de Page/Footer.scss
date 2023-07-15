@@ -1,0 +1,23 @@
+$color-tertiary: white;
+$color-footer: black;
+
+.footer
+{   background-color:$color-footer;
+    padding: 20px;
+    text-align: center;
+    color: $color-tertiary;
+    min-height: 200px;
+}
+
+img
+{padding-top: 30px;}
+
+@media screen  and (width <= 768px) {
+
+    body 
+    {display: flex;
+    justify-content: center;}
+    
+    .footer
+    {margin-top: 20px;}
+}

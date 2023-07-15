@@ -1,0 +1,24 @@
+$container-background:#F6F6F6;
+$color-tertiary: white;
+
+.cardlogement
+{ background-color:$container-background;
+  min-height: 829px;
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+
+@media screen  and (width <= 768px) {
+    .cardlogement{
+    justify-content: center;
+    background-color:$color-tertiary;
+    margin: 0px;
+    padding: 0px;
+  }
+}

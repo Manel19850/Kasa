@@ -1,5 +1,5 @@
 import React from 'react';
-import "./AppartementsInfos.css";
+import "./AppartementsInfos.scss";
 
 
 function Appartementsinfos (props){

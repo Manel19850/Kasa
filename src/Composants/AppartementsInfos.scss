@@ -1,50 +1,55 @@
+$color-primary: #ff6060;
+$color-tertiary: white;
+$color-backgroundDark:#E3E3E3;
+
 .ap-container
-{display: flex;
-justify-content: space-between;}
+{   display: flex;
+    justify-content: space-between;
+}
 
 .ap-tag span
-{
-    background-color: #FF6060;
-    color: white;
+{   background-color:$color-tertiary;
+    color: $color-tertiary;
     padding: 5px 30px;
     border-radius: 30px;
     margin-right: 20px;
 }
 
 .on
-{color: #FF6060;}
+{color:$color-primary;}
 
 .rate
-{color:#E3E3E3;
-font-size: 24px;}
+{   color:$color-backgroundDark;
+    font-size: 24px;
+}
 
 .ap-tag
 { margin-bottom: 30px;}
 
 .ap-tag span
-{
-    background-color: #FF6060;
-    color: white;
+{   background-color:$color-primary;
+    color:$color-tertiary;
     padding: 5px 30px;
     border-radius: 30px;
     margin-right: 20px;
 }
 
-
-.ap-tag
-{ margin-bottom: 30px;}
-
 .logo-host img
-{padding: 0px;
-border-radius:50px;
-width: 64px;
-height: 64px;
+{   padding: 0px;
+    border-radius:50px;
+    width: 64px;
+    height: 64px;
 }
 
 
 @media screen  and (width <= 768px) {
 
-   
+    
+        body {
+          display: flex;
+          align-items: center;
+        }
+    
     .Ap-titre h1
     {font-size: 18px;
     margin-top: 15px;}
@@ -81,6 +86,5 @@ height: 64px;
      {width: 42px;
      height: 42px;
     margin-left: 10px;}
- 
     
      } 

@@ -1,36 +1,34 @@
-import { useState } from "react";
-import "./CollapseEquipement";
-import "./CollapseEquipement.css";
+import React, { useState } from "react";
+import "./CollapseEquipement.scss";
 
-function Equipement(props){
+function Equipement(props) {
+  const [isContentVisible, setContentVisible] = useState(false);
 
-  
+  const showContent = () => {
+    setContentVisible(!isContentVisible);
+  };
 
-    const [isContentvisible, setContenvisible]= useState (false);
-    const showcontent = () => {setContenvisible (!isContentvisible);
-    };
-  
- 
-return (
-
-<div>
-  <div className='Ap-deroulante'>
-
-    <div className='equipement-container'>
-      <div className='equipement'>Equipement <span> <i className="fa-solid fa-chevron-down"onClick={showcontent}></i></span> </div>
-      {isContentvisible && (
-      <div className='equipement-content'>
-        
-        {props.content}
-      
+  return (
+    <div>
+      <div className="Ap-deroulante">
+          <div className="equipement">
+            Equipement
+            <span>
+              {isContentVisible ? (
+               <span> <i className="fa-solid fa-chevron-up" onClick={showContent}></i></span>
+              ) : (
+                <span><i className="fa-solid fa-chevron-down" onClick={showContent}></i></span>
+              )}
+            </span>
+          </div>
+          {isContentVisible && (
+            <div className="equipement-content">
+            <span> {props.content} </span>
+            </div>
+          )}
       </div> 
-      )}
-    </div> 
-  </div>
-</div>
+    </div>
+  );
+}
 
-
-    );
-    }
-
-    export default Equipement;
+export default Equipement;
