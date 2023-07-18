@@ -7,7 +7,7 @@ function Accueil() {
   return (
     <div>
       <Banner/>
-      <CardLogement/>
+      <CardLogement />
     </div>
     
   );

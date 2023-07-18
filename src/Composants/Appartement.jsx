@@ -4,15 +4,14 @@ import {Link} from 'react-router-dom';
 
 function Appartement(props) {
   return (
-    <Link to= "/Appartements" 
-    state={{appartementId:props.id}}>
-    <div className='appartement'> 
-    <div className='appartement-title'>{props.title}</div>
+    <div>
+    <Link to="/Appartements" state={{appartementId: props.id}}>
+      <div className='appartement'> 
+        <img src= {props.imageUrl} alt=''/>
+        <div className='appartement-title'>{props.title}</div>
+      </div>
+    </Link>
     </div>
-      </Link>
-   
-    
   );
 }
-
 export default Appartement;

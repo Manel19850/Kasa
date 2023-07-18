@@ -12,7 +12,6 @@ const location = useLocation();
 console.log ("location",location)
 
 const [selectedFlat, setselectedFlat]= useState (null)
- 
 
 function fetchAppartementData(){
         fetch ("kasa.json")
@@ -31,7 +30,7 @@ return (
 <div>
 
         <div className='AppartementsPages'>
-                <AppartementCarousel imageUrl={(selectedFlat.cover)} />
+                <AppartementCarousel pictures={selectedFlat.pictures} />
                 <AppartementsInfos flat= {selectedFlat} /> 
         </div>
 

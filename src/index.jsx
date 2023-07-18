@@ -10,6 +10,7 @@ import Navbar from './Structure de Page/Navbar';
 import Error from './Pages/Error';
 
 
+
 const StructurePage=()=>{
 return <>
 <Navbar/>

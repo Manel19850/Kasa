@@ -1,41 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "./AppartementCarousel.scss";
 
 function AppartementCarousel(props) {
-  const [images, setImages] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const pictures = props.pictures;
 
-  useEffect(() => {
-    fetchAppartementCarousel();
-  }, []);
+  const [currentPicture, setCurrentPicture] = useState(0);
 
-  function fetchAppartementCarousel() {
-    fetch('kasa.json')
-      .then((res) => res.json())
-      .then((res) => {
-        const imageUrl = res.map((item) => item.cover);
-        setImages(imageUrl);
-      })
-      .catch(console.error);
+  const getClassname = (i) => {
+    if (i === currentPicture) return "show";
+    return "";
   }
-
   const nextSlide = () => {
-    const lastIndex = images.length - 1;
-    setCurrentIndex((prevIndex) => (prevIndex === lastIndex ? 0 : prevIndex + 1));
+    setCurrentPicture((currentPicture + 1) % pictures.length);
   };
-
   const previousSlide = () => {
-    const lastIndex = images.length - 1;
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? lastIndex : prevIndex - 1));
+    setCurrentPicture((currentPicture - 1 + pictures.length) % pictures.length);
   };
-
   return (
     <div className='bannerAppartement'>
-      <img src={images[currentIndex]} alt="" />
-<div className='chevron'>
-      <button onClick={previousSlide}><i class="fa-solid fa-chevron-left"></i></button>
-      <button onClick={nextSlide}><i class="fa-solid fa-chevron-right"></i></button>
- </div>
+      <div className='bannercontainer'>
+      {pictures.map((pic, i) => (
+        <img key={pic} src={pic} alt="" className={getClassname(i)} />
+      ))}
+    </div>
+    <div className='chevron'>
+    <button onClick={previousSlide}><i className="fa-solid fa-chevron-left"></i></button>
+    <button onClick={nextSlide}><i className="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div className='currentSlide'>
+     {currentPicture +1} / {pictures.length}
+    </div>
+   
     </div>
   );
 }

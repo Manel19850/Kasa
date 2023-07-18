@@ -1,7 +1,9 @@
 $color-primary: #ff6060;
 $color-tertiary: white;
-$color-backgroundDark:#E3E3E3;
 
+
+.Ap-deroulante
+{overflow: hidden;}
 
 .equipement
 {   display: flex;
@@ -17,7 +19,7 @@ $color-backgroundDark:#E3E3E3;
     &-content
 {   padding: 10px;
     align-items: center;
-    background-color:$color-backgroundDark;
+    background-color:#F6F6F6;
     color:$color-primary;
     border-radius: 10px;
     margin-right: 20px;
@@ -55,12 +57,14 @@ $color-backgroundDark:#E3E3E3;
 
     .equipement
     { height: 30px;
-    width: 100%;
-    padding-top:10px;}
+    width: 320px;
+    padding-top:10px;
+    margin-right: 0px;}
 
     .equipement-content
     {
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
         margin-right: -10px;
+        width: 320px;
     }
 }

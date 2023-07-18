@@ -27,7 +27,7 @@ $color-backgroundDark:#E3E3E3;
   {padding: 10px;
   width: 1030px;
   align-items: center;
-  background-color:$color-backgroundDark;
+  background-color:#F6F6F6;
   color:$color-primary;
   border-radius: 10px;
   margin-top: -30px;
@@ -71,16 +71,14 @@ $color-backgroundDark:#E3E3E3;
 {width:300px;}
 
 .fa-chevron-down
-{  font-size: 20px;
-  color:$color-tertiary;
-  margin-top: 60px;
- 
+{   font-size: 20px;
+    color:$color-tertiary;
+    margin-top: 60px;
 }
 
 .fa-chevron-up
 {   font-size: 20px;
     color:$color-tertiary;
-   
-
 }
+
 }

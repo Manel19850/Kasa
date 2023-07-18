@@ -2,17 +2,28 @@ $color-primary: #ff6060;
 $color-tertiary: white;
 $color-backgroundDark:#E3E3E3;
 
+.Ap-titre h1{
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 5px;
+}
+
 .ap-container
 {   display: flex;
     justify-content: space-between;
+&-tag
+{ margin-top: 30px;
+    margin-bottom: 30px;}
 }
 
 .ap-tag span
-{   background-color:$color-tertiary;
-    color: $color-tertiary;
+{   background-color:$color-primary;
+    color:$color-tertiary;
     padding: 5px 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .on
@@ -23,19 +34,10 @@ $color-backgroundDark:#E3E3E3;
     font-size: 24px;
 }
 
-.ap-tag
-{ margin-bottom: 30px;}
-
-.ap-tag span
-{   background-color:$color-primary;
-    color:$color-tertiary;
-    padding: 5px 30px;
-    border-radius: 30px;
-    margin-right: 20px;
-}
-
 .logo-host img
-{   padding: 0px;
+
+{   margin-top: 20px;
+    padding: 0px;
     border-radius:50px;
     width: 64px;
     height: 64px;
@@ -44,47 +46,64 @@ $color-backgroundDark:#E3E3E3;
 
 @media screen  and (width <= 768px) {
 
+.Ap-titre h1
+{   font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.Ap-titre h2
+{   font-size: 12px;
+    margin-left: 20px;
+}
+ 
+.ap-container
+{   display: flex;
+    flex-wrap: wrap;
+
+&-tag 
+{    display: flex;
+     justify-content: center;
+     margin-top: 10px;
+     margin-bottom: 15px;
+}
+}
+
+.Ap-host
+{   display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 15px;
+}
+ 
+.rate
+{
+    margin-right: 160px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+ 
+.ap-tag span
+{   text-align: center;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 20px;
+}
+
+.host
+{   margin-top: -20px;
+    margin-left: -10px;
+}
+ 
+.host h3
+{   font-size: 12px;
+}
+
+.logo-host img
+{   width: 42px;
+    height: 42px;
+    margin-left: 10px;
+}
     
-        body {
-          display: flex;
-          align-items: center;
-        }
-    
-    .Ap-titre h1
-    {font-size: 18px;
-    margin-top: 15px;}
- 
-    .ap-container
-    {display: flex;
-     flex-wrap: wrap;}
- 
-     .Ap-host
-     { display: flex;
-     flex-direction: row-reverse;
-     justify-content: center;}
- 
-     .rate
-     {
-     margin-right: 160px;
-     font-size: 20px;}
- 
-     .ap-tag 
-     { display: flex;
-     justify-content: center;}
-     
- 
-     .ap-tag span
-     { text-align: center;
-     font-size: 10px;
-     padding-left: 25px;
-     padding-right: 25px;}
- 
-     .host h3
-     {font-size: 12px;}
- 
-     .logo-host img
-     {width: 42px;
-     height: 42px;
-    margin-left: 10px;}
-    
-     } 
+} 

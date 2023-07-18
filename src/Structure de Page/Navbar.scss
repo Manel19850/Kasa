@@ -5,7 +5,7 @@ $color-primary: #ff6060;
 align-items: center;
 gap:30px;
 color:$color-primary;
-font-weight: 700;
+font-size: 24px;
 & a{
     text-decoration: none;
     color:$color-primary;
@@ -16,17 +16,26 @@ font-weight: 700;
 }
 
 .logo-navbar
-{margin-right: auto;}
+{margin-right: auto;
+margin-bottom: 30px;}
 
 @media screen  and (width <= 768px) {
+    body 
+    {padding: 0px;
+    margin: 0px;}
+    
     .navbar{
         display: flex;
         width: 335px;
         align-items: center;
-        margin-bottom: 20px;}
+        margin-bottom: 20px;
+        font-size: 15px;}
+
+   
 
         .logo-navbar img
         {width: 100px;
-        padding-top: 0px;}
+        margin-left: 40px;
+        }
 
 }

@@ -5,7 +5,9 @@ $color-backgroundDark:#E3E3E3;
 .host
 {display: flex;}
 
-
+.Ap-deroulante
+{overflow: hidden;
+margin-top: 20px;}
 
 .description
 {   position: relative;
@@ -22,7 +24,7 @@ $color-backgroundDark:#E3E3E3;
 {   position: relative;
     padding: 10px;
     align-items: center;
-    background-color:$color-backgroundDark;
+    background-color:#F6F6F6;
     color:$color-primary;
     border-radius: 10px;
     margin-right: 20px;
@@ -67,12 +69,14 @@ $color-backgroundDark:#E3E3E3;
     flex-direction: column;
     margin: 10px;
     gap:40px;
-    justify-content: center;}
+    justify-content: center;
+   }
 
     .description-content
     {
         padding: 10px;
         margin-right: -10px;
+        width: 320px;
     }
 
     .Ap-collapse
@@ -81,8 +85,10 @@ $color-backgroundDark:#E3E3E3;
 
     .description 
     { height: 30px;
-    width:100%;
-    padding-top:10px;}
+     width: 320px;
+    margin-right: 0px;
+    padding-top:10px;
+    }
 
     .fa-chevron-down
     {margin-top: 0px;

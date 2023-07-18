@@ -1,28 +1,54 @@
 $banner-height: 300px;
 $banner-border-radius: 20px;
 $chevron-top: 27%;
+$color-tertiary: white;
 
-.bannerAppartement img {
-  position: relative;
-  width: 100%;
-  height: $banner-height;
-  border-radius: $banner-border-radius;
-  padding: 0;
-  object-fit: cover;
+.bannerAppartement {
+ 
+  bottom: 70px;
+  height:$banner-height;
+
+  .bannercontainer{
+    position: relative;
+  
+
+  img{
+
+width: 100%; 
+height:$banner-height; 
+position: absolute;
+inset: 0;
+border-radius: $banner-border-radius;
+padding: 0px;
+object-fit:cover;
+filter: brightness(80%);
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+&.show { opacity: 1;}
+  }
+}
 }
 
 .chevron {
-  position: absolute;
+  position: relative;
   top: $chevron-top;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+  gap: 92%;
+  }
+
+.currentSlide
+{position: relative;
+color: $color-tertiary;
+font-size: 18px;
+margin-top:8%;
+text-align: center;
+font-weight: bold;}
 
 .fa-chevron-left,
 .fa-chevron-right {
   font-size: 70px;
-  color:white;
+  color:$color-tertiary;
+  margin-top: 40px;
 }
 
 .fa-chevron-right {
@@ -38,17 +64,19 @@ button {
 
 @media screen  and (width <= 768px) {
 
-.bannerAppartement img{
-width:100%;
-height:255px;}
-
-.fa-chevron-right {
-  margin-right:20px;
-  font-size: 35px;
+  .bannerAppartement img {
+    width: 320px;
+    height: 255px;
+    margin: -20px 0 0 20px;
 }
 
-.fa-chevron-left {
-  font-size: 35px;
-}
+.chevron
+{margin-top: -40px;
+margin-left: 20px;
+gap:250px;}
+
+.fa-chevron-left, .fa-chevron-right
+{font-size: 35px;}
 
 }
+
