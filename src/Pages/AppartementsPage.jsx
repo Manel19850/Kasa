@@ -1,45 +1,35 @@
-import React, { useEffect, useState } from 'react';
 import "./AppartementsPage.scss";
-import AppartementCarousel from '../Composants/AppartementCarousel';
-import Description from '../Composants/CollapseDescription';
-import Equipement from '../Composants/CollapseEquipement';
-import AppartementsInfos from '../Composants/AppartementsInfos';
-import {useLocation} from "react-router-dom";
-;
+import AppartementCarousel from '../Composants/Carrousel/AppartementCarousel';
+import Description from '../Composants/Appartements info/CollapseDescription';
+import Equipement from '../Composants/Appartements info/CollapseEquipement';
+import AppartementsInfos from '../Composants/Appartements info/AppartementsInfos';
+import {useParams} from "react-router-dom";
+import logementsDATA from "../Composants/kasa.json";
+import Footer from '../Structure de Page/Footer';
+import Navbar from '../Structure de Page/Navbar';
+
+
 
 function AppartementsPage (){
-const location = useLocation();
-console.log ("location",location)
-
-const [selectedFlat, setselectedFlat]= useState (null)
-
-function fetchAppartementData(){
-        fetch ("kasa.json")
-        .then ((res) => res.json ())
-        .then ((flats) => {
-        const flat = flats.find ((flat) => flat.id === location.state.appartementId)
-        setselectedFlat (flat);
-        });
-}
-useEffect(fetchAppartementData,[]);
-
-if (selectedFlat == null) return <div>... loading</div>
-
+        const { id } = useParams();
+        console.log(id)
+        const logement = logementsDATA.find((logement) => logement.id === id);
+        console.log(logementsDATA)
 return (
 
 <div>
-
+<Navbar />
         <div className='AppartementsPages'>
-                <AppartementCarousel pictures={selectedFlat.pictures} />
-                <AppartementsInfos flat= {selectedFlat} /> 
+                <AppartementCarousel pictures={logement.pictures} />
+                <AppartementsInfos flat= {logement} /> 
         </div>
 
                 <div className ='Ap-collapse'>
-                        <Description content ={(selectedFlat.description)}/>
-                        <Equipement content={selectedFlat.equipments.map(eq =><li>{eq}</li>)}/>
+                        <Description content ={(logement.description)}/>
+                        <Equipement content={logement.equipments.map(eq =><li>{eq}</li>)}/>
                 </div>
         
-       
+<Footer />     
 </div>
 
 

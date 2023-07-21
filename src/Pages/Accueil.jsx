@@ -1,14 +1,18 @@
 import React from 'react';
 import Banner from '../Structure de Page/Banner';
-import CardLogement from '../Composants/CardLogement'
+import CardLogement from '../Composants/Logements/CardLogement'
+import Footer from '../Structure de Page/Footer';
+import Navbar from '../Structure de Page/Navbar';
 
 
 function Accueil() {
   return (
-    <div>
-      <Banner/>
-      <CardLogement />
-    </div>
+    <>
+    <Navbar />
+    <Banner/>
+    <CardLogement />
+    <Footer />
+  </>
     
   );
 }

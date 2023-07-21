@@ -4,16 +4,13 @@ $chevron-top: 27%;
 $color-tertiary: white;
 
 .bannerAppartement {
- 
   bottom: 70px;
   height:$banner-height;
 
-  .bannercontainer{
-    position: relative;
-  
+.bannercontainer{
+  position: relative;
 
-  img{
-
+img{
 width: 100%; 
 height:$banner-height; 
 position: absolute;
@@ -63,20 +60,29 @@ button {
 
 
 @media screen  and (width <= 768px) {
-
-  .bannerAppartement img {
-    width: 320px;
-    height: 255px;
-    margin: -20px 0 0 20px;
+  .bannerAppartement  {
+  height: 300px;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: -20px;
+  margin-right: 20PX;
 }
 
 .chevron
-{margin-top: -40px;
-margin-left: 20px;
-gap:250px;}
+{
+gap:265px;}
 
 .fa-chevron-left, .fa-chevron-right
 {font-size: 35px;}
 
+.fa-chevron-left
+{margin-right: 15px;
+margin-top: 50px;}
+
+.fa-chevron-right
+{margin-top: 50px;}
+
+.currentSlide
+{margin-top: 50%;}
 }
 

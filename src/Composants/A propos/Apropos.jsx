@@ -29,7 +29,7 @@ function Apropos() {
   return (
     <div className="page-apropos">
       <div className="banner-apropos">
-        <img src="banner.png" alt="Photo" />
+        <img src="banner.png" alt="montagne" />
       </div>
 
       <div className="container-apropos">
