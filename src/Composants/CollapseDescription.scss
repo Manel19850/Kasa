@@ -1,12 +1,17 @@
 $color-primary: #ff6060;
 $color-tertiary: white;
+$color-backgroundDark:#E3E3E3;
 
+.host
+{display: flex;}
 
 .Ap-deroulante
-{overflow: hidden;}
+{overflow: hidden;
+margin-top: 20px;}
 
-.equipement
-{   display: flex;
+.description
+{   position: relative;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding:10px;
@@ -14,10 +19,11 @@ $color-tertiary: white;
     color:$color-tertiary;
     border-radius: 10px;
     margin-right: 20px;
-    overflow: hidden;
+    font-size: 18px;
 
     &-content
-{   padding: 10px;
+{   position: relative;
+    padding: 10px;
     align-items: center;
     background-color:#F6F6F6;
     color:$color-primary;
@@ -25,10 +31,13 @@ $color-tertiary: white;
     margin-right: 20px;
     position: relative;
     z-index: -1;
-    animation: slide-in 0.5s ease-in-out;
     overflow: hidden;
+    animation: slide-in 0.5s ease-in-out;
+    
+   
 }
 }
+
 
 @keyframes slide-in {
     0% {
@@ -39,7 +48,7 @@ $color-tertiary: white;
     }
   }
 
-  .fa-chevron-down
+.fa-chevron-down
 {   font-size: 35px;
     color:$color-tertiary;
     cursor: pointer;
@@ -53,20 +62,42 @@ $color-tertiary: white;
 }
 
 
+
 @media screen  and (width <= 768px) {
 
-    .equipement
-    { height: 20px;
-        width: 340px;
-       margin-right: 0px;
-       padding-top:10px;
-       font-size: 13px;
-       }
+    .Ap-deroulante
+    {display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap:40px;
+    justify-content: center;
+   }
 
-    .equipement-content
+    .description-content
     {
         padding: 10px;
         margin-right: -10px;
         width: 340px;
     }
+
+    .Ap-collapse
+    {display: flex;
+    flex-direction: column;}
+
+    .description 
+    { height: 20px;
+     width: 340px;
+    margin-right: 0px;
+    padding-top:10px;
+    font-size: 13px;
+    }
+
+    .fa-chevron-down
+    {margin-top: 60px;
+    font-size: 10px;
+    position: relative;
+    bottom: 30px;}
+
+
+
 }

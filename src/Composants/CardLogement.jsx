@@ -1,5 +1,5 @@
 import React from "react";
-import logementsDATA from "../kasa.json";
+import logementsDATA from "./kasa.json";
 import { Link } from "react-router-dom";
 import "./CardLogement.scss";
 
