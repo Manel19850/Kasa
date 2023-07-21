@@ -16,7 +16,6 @@ function AppartementsPage (){
         const logement = logementsDATA.find((logement) => logement.id === id);
         console.log(logementsDATA)
 return (
-
 <div>
 <Navbar />
         <div className='AppartementsPages'>
@@ -27,12 +26,10 @@ return (
                 <div className ='Ap-collapse'>
                         <Description content ={(logement.description)}/>
                         <Equipement content={logement.equipments.map(eq =><li>{eq}</li>)}/>
-                </div>
-        
-<Footer />     
+              </div>
+              <div className="page-2"> 
+<Footer /> </div>
 </div>
-
-
 
 )
 }

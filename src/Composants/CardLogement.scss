@@ -7,6 +7,7 @@ $color-secondery:#863535;
   position: relative;
   width: 100%;
   height: 340px;
+  margin-right: 55px;
   margin-bottom: 20px;
   border-radius: 10px;
   
@@ -57,10 +58,12 @@ $color-secondery:#863535;
   }
 
   .appartement img
-  {margin-left: 5px;
-  margin-bottom: 20px;}
+  {margin-left: 27px;
+  margin-bottom: 20px;
+width: 320px;
+height: 320px;}
 
   .appartement-title 
-  {margin-left: 20px;
+  {margin-left: 35px;
   margin-top: -60px;}
 }
