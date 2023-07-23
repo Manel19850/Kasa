@@ -26,15 +26,22 @@ $color-tertiary: white;
   @media screen  and (width <= 768px) {
     .image-banner img{
     height: 100px;
-    width: 320px;
+    width: 335px;
     border-radius: 10px;
     margin-left: 30px;
    }
 
     .banner-text h1
-    { margin-top: -35px;
+    { margin-top: -67px;
     font-size: 20px;
   align-items: center;
   margin-left: -88px;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width:929px){
+.banner-text h1
+{margin-left: -60%;
+margin-top: -40px;}
 
 }

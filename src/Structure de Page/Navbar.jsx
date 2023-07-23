@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.scss';
 
 
@@ -10,12 +10,12 @@ function Navbar() {
       <div className='logo-navbar'>
         <img src="logo.png" alt="logo" />
       </div>
-      <Link to="/">
+      <NavLink to="/">
          <div> Accueil </div>
-      </Link>
-      <Link to="/about">
+      </NavLink>
+      <NavLink to="/about">
          <div>A Propos</div>
-      </Link>
+      </NavLink>
     </nav>
     
   );

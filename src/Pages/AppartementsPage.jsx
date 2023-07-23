@@ -1,8 +1,8 @@
 import "./AppartementsPage.scss";
-import AppartementCarousel from '../Composants/AppartementCarousel';
-import Description from '../Composants/CollapseDescription';
-import Equipement from '../Composants/CollapseEquipement';
-import AppartementsInfos from '../Composants/AppartementsInfos';
+import AppartementCarousel from '../Composants/Appartements/AppartementCarousel';
+import Description from '../Composants/Appartements/CollapseDescription';
+import Equipement from '../Composants/Appartements/CollapseEquipement';
+import AppartementsInfos from '../Composants/Appartements/AppartementsInfos';
 import {useParams} from "react-router-dom";
 import logementsDATA from "../Composants/kasa.json";
 import Footer from '../Structure de Page/Footer';

@@ -49,7 +49,12 @@ $color-secondery:#863535;
   }
 
 
-@media screen  and (width <= 768px) {
+@media screen  and (width <= 767px) {
+
+  body 
+  {padding: 0px;
+  margin: 0px;}
+
     .cardlogement{
     justify-content: center;
     background-color:$color-tertiary;
@@ -59,11 +64,22 @@ $color-secondery:#863535;
 
   .appartement img
   {margin-left: 27px;
-  margin-bottom: 20px;
-width: 320px;
-height: 320px;}
+  margin-bottom: -20px;
+}
 
   .appartement-title 
   {margin-left: 45px;
-  margin-top: -60px;}
+  margin-top: -30px;}
+}
+
+@media screen and (min-width: 768px) and (max-width:929px)
+
+{
+  .appartement img
+  {width: 100%;
+ 
+}
+.appartement-title 
+  {font-size: 20px;}
+
 }
