@@ -7,6 +7,7 @@ import {useParams} from "react-router-dom";
 import logementsDATA from "../Composants/kasa.json";
 import Footer from '../Structure de Page/Footer';
 import Navbar from '../Structure de Page/Navbar';
+import Error from './Error';
 
 
 
@@ -15,10 +16,15 @@ function AppartementsPage (){
         console.log(id)
         const logement = logementsDATA.find((logement) => logement.id === id);
         console.log(logementsDATA)
+
+if (!logement){
+        return <Error/>
+}
 return (
 <div>
-<Navbar />
+<Navbar/>
         <div className='AppartementsPages'>
+                
                 <AppartementCarousel pictures={logement.pictures} />
                 <AppartementsInfos flat= {logement} /> 
         </div>
@@ -27,8 +33,7 @@ return (
                         <Description content ={(logement.description)}/>
                         <Equipement content={logement.equipments.map(eq =><li>{eq}</li>)}/>
               </div>
-              <div className="page-2"> 
-<Footer /> </div>
+<Footer/> 
 </div>
 
 )

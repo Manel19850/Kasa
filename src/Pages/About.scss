@@ -3,15 +3,12 @@
 height: 415px;
 object-fit: cover;
 border-radius: 25px;
-padding:0px;}
+padding:0px;
+margin-left: 0px;}
 
 @media screen  and (width <= 768px) {
 
-.banner-apropos img
-{   width:350px;
-    height:222px;
-  
-}
+
 
 .container-apropos
 {margin: 30px;}

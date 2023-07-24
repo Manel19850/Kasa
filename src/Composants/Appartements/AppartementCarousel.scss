@@ -9,6 +9,8 @@ $color-tertiary: white;
 
 .bannercontainer{
   position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
 
 img{
 width: 100%; 
@@ -30,7 +32,7 @@ transition: opacity 0.5s ease-in-out;
   position: relative;
   top: $chevron-top;
   display: flex;
-  gap: 92%;
+ justify-content: space-between;
   }
 
 .currentSlide
@@ -59,32 +61,49 @@ button {
   background-color: transparent;
 }
 
-
-@media screen  and (width <= 768px) {
+@media screen  and (max-width:768px){
   .bannerAppartement  {
   height: 300px;
-  width: 350px;
   margin-left: 20px;
   margin-top: -20px;
   margin-right: 20PX;
 }
 
 .chevron
-{
-gap:265px;}
+{display: flex;
+justify-content: space-between;}
 
 .fa-chevron-left, .fa-chevron-right
 {font-size: 35px;}
 
 .fa-chevron-left
-{margin-right: -25px;
+{margin-right: -33px;
 margin-top: 50px;}
 
 .fa-chevron-right
-{margin-top: 50px;}
+{margin-top: 50px;
+margin-right: 10px;}
 
 .currentSlide
 {margin-top: 50%;
   visibility: hidden;}
 }
 
+@media screen and (min-width: 768px) and (width:1024px)
+{
+.bannercontainer 
+{width: 990px;
+display: flex;
+justify-content: center;
+
+}
+
+.fa-chevron-right
+{margin-left:-170%;
+}
+.currentSlide
+{visibility: hidden;}
+
+.fa-chevron-left .fa-chevron-right
+{font-size: 30px;}
+}

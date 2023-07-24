@@ -2,6 +2,10 @@ $color-primary: #ff6060;
 $color-tertiary: white;
 $color-backgroundDark:#E3E3E3;
 
+.banner-apropos
+{margin-left: 10px;
+margin-right: 10px;}
+
 .container-apropos
 { display: flex;
   flex-direction: column;
@@ -62,6 +66,7 @@ $color-backgroundDark:#E3E3E3;
 
 @media screen  and (width <= 768px) {
 
+ 
   .container-apropos
   {overflow: hidden;}
 
@@ -85,5 +90,19 @@ margin-top: -45px;}
 {   font-size: 20px;
     color:$color-tertiary;
 }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px)
+{
+  .fiabilite, .respect, .securite, .service {
+    width:600px;
+    height: 20px;}
+
+.content
+{width:610px;}
+
+.container-apropos
+{overflow: hidden;}
 
 }

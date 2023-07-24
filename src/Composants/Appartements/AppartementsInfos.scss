@@ -14,6 +14,8 @@ margin-bottom: 5px;
 .ap-container
 {   display: flex;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
 &-tag
 { margin-top: 30px;
     margin-bottom: 30px;}
@@ -45,6 +47,7 @@ margin-bottom: 5px;
     width: 64px;
     height: 64px;
 }
+
 
 
 @media screen  and (width <= 768px) {
@@ -109,4 +112,18 @@ margin-bottom: 5px;
     margin-left: 10px;
 }
     
+.ap-tag span
+{display: flex;
+flex-wrap: wrap;}
 } 
+
+@media screen and (min-width: 768px) and (max-width:929px)
+{
+    .host
+    { 
+     margin-right: 30px;
+
+    }
+
+
+}

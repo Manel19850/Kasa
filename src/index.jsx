@@ -13,6 +13,7 @@ import Error from './Pages/Error';
 const Router = () => {
   return (
     <BrowserRouter>
+    
       <Routes>
         <Route path='/' element={<Accueil/>} />
         <Route path='/About' element={<About />} />
