@@ -55,31 +55,34 @@ margin-bottom: 5px;
 .Ap-titre h1
 {   font-size: 18px;
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .Ap-titre h2
 {   font-size: 12px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
  
 .ap-container
 {   display: flex;
     flex-wrap: wrap;
+    margin: 0px;
 
 &-tag 
 {    display: flex;
      justify-content: center;
      margin-top: 10px;
      margin-bottom: 15px;
+     
 }
 }
 
 .Ap-host
 {   display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    margin-top: 15px;
+    gap: 50px;
+    margin-top: 5px;
 }
  
 .rate
@@ -94,7 +97,7 @@ margin-bottom: 5px;
     font-size: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .host
@@ -119,11 +122,15 @@ flex-wrap: wrap;}
 
 @media screen and (min-width: 768px) and (max-width:929px)
 {
-    .host
-    { 
-     margin-right: 30px;
-
+    .Ap-host {
+    gap:380px
     }
+    
+    .ap-tag
+    {display: flex;
+    flex-wrap: nowrap;}
+    .host
+    { margin-right: 30px;}
 
 
 }

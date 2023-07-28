@@ -47,7 +47,7 @@ $color-secondery:#863535;
     justify-content: center;
     border-radius: 15px;
   }
-  @media screen  and (width <= 767px) {
+  @media screen  and (width <= 768px) {
 
     .cardlogement{
      justify-content: center;
@@ -56,8 +56,8 @@ $color-secondery:#863535;
      padding: 0px;}
    
      .appartement img
-     {margin-left: 27px;
-     width: 335px;
+     {margin-left: 10px;
+     width: 390px;
      margin-bottom: -20px;}
    
      .appartement-title 

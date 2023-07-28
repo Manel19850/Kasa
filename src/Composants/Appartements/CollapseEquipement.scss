@@ -13,7 +13,7 @@ $color-tertiary: white;
     padding:10px;
     background-color:$color-primary;
     color:$color-tertiary;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 20px;
     border-radius: 10px;
     font-size: 18px;
@@ -58,13 +58,12 @@ $color-tertiary: white;
 @media screen and (min-width: 320px) and (max-width: 425px) {
     .equipement-content {
         padding: 10px;
-        margin-left: 10px;
-        margin-top: -40px;
-       
+        margin-top: -40px; 
     }
 
     .equipement {
         height: 20px;
+        margin: 0px;
         font-size: 13px;
     }
 }
@@ -74,7 +73,7 @@ $color-tertiary: white;
 
     .equipement-content
     {padding: 10px;
-    margin-left: 10px;
+    width: 390px;
     margin-top: -40px;
    }
 
@@ -97,11 +96,12 @@ $color-tertiary: white;
 {
     .equipement
     { height: 20px;
-     margin-left: 10px;
     font-size: 13px;
-    }
+    margin: 0px;}
+
     .equipement-content
-    {margin-left: 10px;
+    {
+    width: 710px;
     padding: 10px;
     }
 }

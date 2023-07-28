@@ -33,13 +33,14 @@ transition: opacity 0.5s ease-in-out;
   top: $chevron-top;
   display: flex;
  justify-content: space-between;
+ margin: 15px;
   }
 
 .currentSlide
 {position: relative;
 color: $color-tertiary;
 font-size: 18px;
-margin-top:8%;
+margin-top:10%;
 text-align: center;
 font-weight: bold;
 visibility: visible;}
@@ -51,10 +52,6 @@ visibility: visible;}
   margin-top: 40px;
 }
 
-.fa-chevron-right {
-  margin-left:40px;
-}
-
 button {
   text-decoration: none;
   border: none;
@@ -64,14 +61,15 @@ button {
 @media screen  and (max-width:768px){
   .bannerAppartement  {
   height: 300px;
-  margin-left: 20px;
   margin-top: -20px;
-  margin-right: 20PX;
 }
+.bannercontainer img
+{width: 990px;}
 
 .chevron
 {display: flex;
-justify-content: space-between;}
+justify-content: space-between;
+margin: 0px;}
 
 .fa-chevron-left, .fa-chevron-right
 {font-size: 35px;}
@@ -85,25 +83,18 @@ margin-top: 50px;}
 margin-right: 10px;}
 
 .currentSlide
-{margin-top: 50%;
-  visibility: hidden;}
+{visibility: hidden;}
 }
 
 @media screen and (min-width: 768px) and (width:1024px)
 {
-.bannercontainer 
-{width: 990px;
-display: flex;
-justify-content: center;
 
-}
-
-.fa-chevron-right
-{margin-left:-170%;
-}
-.currentSlide
-{visibility: hidden;}
+.bannerAppartement img
+{width: 990px;}
 
 .fa-chevron-left .fa-chevron-right
 {font-size: 30px;}
+
+.currentSlide
+{visibility: hidden;}
 }
