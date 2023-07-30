@@ -40,7 +40,7 @@ transition: opacity 0.5s ease-in-out;
 {position: relative;
 color: $color-tertiary;
 font-size: 18px;
-margin-top:10%;
+margin-top:8%;
 text-align: center;
 font-weight: bold;
 visibility: visible;}
@@ -57,6 +57,7 @@ button {
   border: none;
   background-color: transparent;
 }
+
 
 @media screen  and (max-width:768px){
   .bannerAppartement  {
@@ -84,6 +85,7 @@ margin-right: 10px;}
 
 .currentSlide
 {visibility: hidden;}
+
 }
 
 @media screen and (min-width: 768px) and (width:1024px)
@@ -94,7 +96,4 @@ margin-right: 10px;}
 
 .fa-chevron-left .fa-chevron-right
 {font-size: 30px;}
-
-.currentSlide
-{visibility: hidden;}
 }
