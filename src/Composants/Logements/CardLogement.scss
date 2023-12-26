@@ -47,33 +47,35 @@ $color-secondery:#863535;
     justify-content: center;
     border-radius: 15px;
   }
-  @media screen  and (width <= 768px) {
 
-    .cardlogement{
-     justify-content: center;
-     background-color:$color-tertiary;
-     margin: 0px;
-     padding: 0px;}
-   
-     .appartement img
-     {margin-left: 10px;
-     width: 390px;
-     margin-bottom: -20px;}
-   
-     .appartement-title 
-     {margin-left: 45px;
-     margin-top: -30px;}
-   }
+@media screen and (max-width: 768px) {
+  .cardlogement {
+      justify-content: center;
+      background-color: $color-tertiary;
+      margin-right: 25px;
+      margin-bottom: 20px;
+      padding: 0;
+  }
+
+  .appartement img {
+      margin-left: 10px;
+      width: 100%; 
+      margin-bottom:10px;
+  }
+
+  .appartement-title {
+      margin-left: 45px;
+      margin-top: -50px;
+  }
+}
 
 
+@media screen and (min-width: 769px) and (max-width: 929px) {
+  .appartement img {
+      width: 100%;
+  }
 
-@media screen and (min-width: 768px) and (max-width:929px)
-
-{
-  .appartement img
-  {width: 100%;}
-
-.appartement-title 
-{font-size: 20px;}
-
+  .appartement-title {
+      font-size: 20px;
+  }
 }
